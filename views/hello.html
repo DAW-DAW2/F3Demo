@@ -1,0 +1,7 @@
+<p> Hello , {{ @name }} ! </p>
+<h6>Lista de amigos</h6>
+<ul>
+<repeat group="{{ @amigos }}" value = "{{ @amigo }}" >
+	<li> {{ @amigo }}</li>
+</repeat>
+</ul>

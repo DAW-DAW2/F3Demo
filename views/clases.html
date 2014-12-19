@@ -1,0 +1,11 @@
+<h3> {{ @pagetitle }} </h3>
+<ul>
+<repeat group="{{ @clases }}" key = "{{ @nombre_clase }}" value = "{{ @clase }}" >
+	<li> {{ @nombre_clase }}</li>
+	<ul>
+	<repeat group="{{ @clase }}" value = " {{ @elem_clase }}" >
+		<li> {{ @elem_clase }} </li>
+	</repeat>
+	</ul>
+</repeat>
+</ul>
